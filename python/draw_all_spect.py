@@ -1,9 +1,11 @@
+#!/bin/python
+
 import ibmseti
 import matplotlib.pyplot as plt
 import numpy as np
+import sys
 
-baseDir = '/Users/jimh/SETI/basic/'
-index = open(baseDir + 'public_list_basic_v2_26may_2017.csv','r')
+index = open(sys.argv[1],'r')
 
 def draw_spectrogram(data):
     
